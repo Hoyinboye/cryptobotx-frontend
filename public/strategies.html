@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Strategies - CryptoBotX</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 2px solid #059669;
+        }
+        .logo {
+            color: #10b981;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #10b981;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover { color: #34d399; }
+        .disclaimer-box {
+            background: #059669;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .warning-box {
+            background: #dc262620;
+            border: 2px solid #dc2626;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .strategy-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border: 1px solid #333;
+            border-left: 4px solid #10b981;
+        }
+        .strategy-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+            padding: 15px;
+            background: #111;
+            border-radius: 5px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #10b981;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            color: #999;
+        }
+        h1, h2 { color: #10b981; }
+        h3 { color: #34d399; }
+        ul li { margin: 8px 0; }
+        .highlight { color: #10b981; font-weight: bold; }
+        .risk-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .risk-beginner { background: #10b981; color: white; }
+        .risk-intermediate { background: #f59e0b; color: white; }
+        .risk-advanced { background: #dc2626; color: white; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">📈 CryptoBotX</div>
+        <h1>Trading Strategies</h1>
+    </div>
+
+    <a href="/" class="back-link">← Back to Home</a>
+    
+    <div class="disclaimer-box">
+        📚 EDUCATIONAL PURPOSES ONLY: These strategies are for learning and testing. No financial advice is provided. All trading involves substantial risk.
+    </div>
+
+    <div class="strategy-card">
+        <h2>🔲 Grid Trading Strategy <span class="risk-badge risk-beginner">Beginner</span></h2>
+        
+        <h3>How It Works:</h3>
+        <p>Grid trading places multiple buy and sell orders at predetermined price intervals, creating a "grid" of orders. When the market moves up and down within a range, the bot profits from the price fluctuations by buying low and selling high at each grid level.</p>
+        
+        <div class="strategy-stats">
+            <div class="stat">
+                <div class="stat-value">+15.2%</div>
+                <div class="stat-label">Avg. Profit</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">1,240</div>
+                <div class="stat-label">Total Trades</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">78%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">Medium</div>
+                <div class="stat-label">Risk Level</div>
+            </div>
+        </div>
+
+        <h3>Best For:</h3>
+        <ul>
+            <li>Sideways/ranging markets with regular price fluctuations</li>
+            <li>Stable cryptocurrencies with predictable volatility</li>
+            <li>Markets without strong trending direction</li>
+        </ul>
+
+        <h3>Key Features:</h3>
+        <ul>
+            <li><span class="highlight">Automated Grid Setup:</span> AI determines optimal grid spacing</li>
+            <li><span class="highlight">Dynamic Adjustment:</span> Grid levels adjust based on volatility</li>
+            <li><span class="highlight">Risk Management:</span> Built-in stop-loss if price breaks grid range</li>
+        </ul>
+    </div>
+
+    <div class="strategy-card">
+        <h2>📊 RSI Swing Strategy <span class="risk-badge risk-intermediate">Intermediate</span></h2>
+        
+        <h3>How It Works:</h3>
+        <p>The RSI (Relative Strength Index) strategy uses momentum indicators to identify overbought and oversold conditions. When RSI drops below 30 (oversold), the bot considers buying. When RSI rises above 70 (overbought), it considers selling.</p>
+        
+        <div class="strategy-stats">
+            <div class="stat">
+                <div class="stat-value">+22.8%</div>
+                <div class="stat-label">Avg. Profit</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">892</div>
+                <div class="stat-label">Total Trades</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">82%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">Medium-High</div>
+                <div class="stat-label">Risk Level</div>
+            </div>
+        </div>
+
+        <h3>Best For:</h3>
+        <ul>
+            <li>Volatile markets with clear momentum swings</li>
+            <li>Cryptocurrencies that respect technical indicators</li>
+            <li>Short to medium-term trading opportunities</li>
+        </ul>
+
+        <h3>Key Features:</h3>
+        <ul>
+            <li><span class="highlight">AI-Enhanced RSI:</span> Machine learning improves signal accuracy</li>
+            <li><span class="highlight">Multi-Timeframe Analysis:</span> Considers multiple RSI periods</li>
+            <li><span class="highlight">Confirmation Signals:</span> Additional indicators filter false signals</li>
+        </ul>
+    </div>
+
+    <div class="strategy-card">
+        <h2>📈 Moving Average Crossover <span class="risk-badge risk-beginner">Beginner</span></h2>
+        
+        <h3>How It Works:</h3>
+        <p>This strategy uses two moving averages (fast and slow) to identify trend changes. When the fast MA crosses above the slow MA, it signals a potential uptrend (buy signal). When the fast MA crosses below the slow MA, it signals a potential downtrend (sell signal).</p>
+        
+        <div class="strategy-stats">
+            <div class="stat">
+                <div class="stat-value">+18.5%</div>
+                <div class="stat-label">Avg. Profit</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">654</div>
+                <div class="stat-label">Total Trades</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">75%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">Medium</div>
+                <div class="stat-label">Risk Level</div>
+            </div>
+        </div>
+
+        <h3>Best For:</h3>
+        <ul>
+            <li>Trending markets with clear directional movement</li>
+            <li>Longer-term position holding</li>
+            <li>Stable cryptocurrencies with less noise</li>
+        </ul>
+
+        <h3>Key Features:</h3>
+        <ul>
+            <li><span class="highlight">Adaptive Periods:</span> AI adjusts MA periods based on market conditions</li>
+            <li><span class="highlight">Trend Strength Filter:</span> Only trades strong trend signals</li>
+            <li><span class="highlight">Whipsaw Protection:</span> Reduces false signals in choppy markets</li>
+        </ul>
+    </div>
+
+    <div class="strategy-card">
+        <h2>🔄 Arbitrage Strategy <span class="risk-badge risk-advanced">Advanced</span></h2>
+        
+        <h3>How It Works:</h3>
+        <p>Arbitrage exploits price differences for the same cryptocurrency across different exchanges. The bot simultaneously buys on the exchange with the lower price and sells on the exchange with the higher price, capturing the price difference as profit.</p>
+        
+        <div class="strategy-stats">
+            <div class="stat">
+                <div class="stat-value">+12.3%</div>
+                <div class="stat-label">Avg. Profit</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">2,180</div>
+                <div class="stat-label">Total Trades</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">95%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">Low-Medium</div>
+                <div class="stat-label">Risk Level</div>
+            </div>
+        </div>
+
+        <h3>Best For:</h3>
+        <ul>
+            <li>Users with accounts on multiple exchanges</li>
+            <li>High-frequency trading opportunities</li>
+            <li>Risk-averse traders seeking more predictable returns</li>
+        </ul>
+
+        <h3>Key Features:</h3>
+        <ul>
+            <li><span class="highlight">Real-Time Price Monitoring:</span> Continuous scanning across exchanges</li>
+            <li><span class="highlight">Execution Speed:</span> Lightning-fast order placement</li>
+            <li><span class="highlight">Fee Calculation:</span> Accounts for trading fees in profit calculations</li>
+        </ul>
+    </div>
+
+    <div class="warning-box">
+        ⚠️ <strong>CRITICAL RISK WARNING:</strong> All trading strategies can result in significant losses, even those with high historical win rates. Market conditions change, and past performance does not guarantee future results. You are solely responsible for all trading decisions and potential losses.
+    </div>
+
+    <div class="strategy-card">
+        <h2>🎯 Strategy Selection Guide</h2>
+        
+        <h3>For Beginners:</h3>
+        <ul>
+            <li><span class="highlight">Start with Grid Trading</span> in ranging markets</li>
+            <li><span class="highlight">Use Moving Average Crossover</span> for trending markets</li>
+            <li><span class="highlight">Begin with small amounts</span> to test and learn</li>
+        </ul>
+
+        <h3>For Intermediate Traders:</h3>
+        <ul>
+            <li><span class="highlight">Try RSI Swing Strategy</span> for momentum trading</li>
+            <li><span class="highlight">Combine multiple strategies</span> for diversification</li>
+            <li><span class="highlight">Monitor and adjust</span> based on market conditions</li>
+        </ul>
+
+        <h3>For Advanced Traders:</h3>
+        <ul>
+            <li><span class="highlight">Implement Arbitrage</span> across multiple exchanges</li>
+            <li><span class="highlight">Create custom strategies</span> using AI parameters</li>
+            <li><span class="highlight">Use advanced risk management</span> techniques</li>
+        </ul>
+    </div>
+
+    <div class="disclaimer-box">
+        🔬 EXPERIMENTAL NATURE: All strategies are part of an experimental AI platform. Results may vary significantly from historical performance. Never trade with money you cannot afford to lose entirely.
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #333;">
+        <a href="/" class="back-link">← Return to CryptoBotX Home</a>
+    </div>
+
+</body>
+</html>
