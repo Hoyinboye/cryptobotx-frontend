@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <defs>
+    <!-- Gradient for the bot icon -->
+    <linearGradient id="botGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient for the text -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Drop shadow -->
+    <filter id="dropshadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle for the bot icon -->
+  <circle cx="40" cy="40" r="28" fill="url(#botGradient)" filter="url(#dropshadow)" rx="8"/>
+  
+  <!-- Bot Icon - Head -->
+  <rect x="28" y="28" width="24" height="20" rx="4" fill="white" opacity="0.9"/>
+  
+  <!-- Bot Icon - Eyes -->
+  <circle cx="34" cy="36" r="3" fill="url(#botGradient)"/>
+  <circle cx="46" cy="36" r="3" fill="url(#botGradient)"/>
+  
+  <!-- Bot Icon - Mouth -->
+  <rect x="32" y="42" width="16" height="2" rx="1" fill="url(#botGradient)" opacity="0.8"/>
+  
+  <!-- Bot Icon - Antennas -->
+  <line x1="32" y1="28" x2="32" y2="22" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <line x1="48" y1="28" x2="48" y2="22" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <circle cx="32" cy="22" r="2" fill="#10b981"/>
+  <circle cx="48" cy="22" r="2" fill="#10b981"/>
+  
+  <!-- Bot Icon - Body -->
+  <rect x="30" y="48" width="20" height="16" rx="2" fill="white" opacity="0.9"/>
+  
+  <!-- Bot Icon - Chest panel -->
+  <rect x="34" y="52" width="12" height="8" rx="1" fill="url(#botGradient)" opacity="0.6"/>
+  
+  <!-- Currency symbols floating around -->
+  <text x="16" y="20" font-family="Arial, sans-serif" font-size="12" fill="#10b981" opacity="0.7" font-weight="bold">₿</text>
+  <text x="60" y="25" font-family="Arial, sans-serif" font-size="10" fill="#059669" opacity="0.6" font-weight="bold">Ξ</text>
+  <text x="15" y="65" font-family="Arial, sans-serif" font-size="8" fill="#34d399" opacity="0.5" font-weight="bold">$</text>
+  
+  <!-- Main Text -->
+  <text x="85" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#textGradient)" filter="url(#dropshadow)">CryptoBotX</text>
+  
+  <!-- Tagline -->
+  <text x="87" y="52" font-family="Arial, sans-serif" font-size="10" fill="#64748b" font-weight="500">AI-POWERED TRADING</text>
+  
+  <!-- Decorative elements -->
+  <rect x="85" y="58" width="60" height="1" fill="url(#textGradient)" opacity="0.6"/>
+  
+  <!-- Subtle tech pattern -->
+  <g opacity="0.1">
+    <circle cx="250" cy="20" r="1" fill="#10b981"/>
+    <circle cx="260" cy="30" r="1.5" fill="#059669"/>
+    <circle cx="270" cy="15" r="1" fill="#34d399"/>
+    <line x1="250" y1="20" x2="260" y2="30" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="260" y1="30" x2="270" y2="15" stroke="#059669" stroke-width="0.5"/>
+  </g>
+</svg>
